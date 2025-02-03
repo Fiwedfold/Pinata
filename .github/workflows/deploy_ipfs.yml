@@ -13,9 +13,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to IPFS
-        uses: popovoleksandr/ipfs-pinata-deploy-action@v1
+        uses: popovoleksandr/ipfs-pinata-deploy-action@v1.5.2
         with:
           pinata-jwt: ${{ secrets.PINATA_JWT1 }}
-          path: ./public  # Path to your static site (e.g., build folder)
-          verbose: true  # Optional: Show detailed logs
+          path: ./public  
+          verbose: true  
 
