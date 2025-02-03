@@ -15,7 +15,9 @@ jobs:
       - name: Deploy to IPFS
         uses: popovoleksandr/ipfs-pinata-deploy-action@v1.5.2
         with:
-          pinata-jwt: ${{ secrets.PINATA_JWT1 }}
+          pin_name: "ipfs_upload"
+          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
+          pinata-secret-api-key: ${{ secrets.PINATA_SECRET_API_KEY }}
           path: ./public  
           verbose: true  
 
