@@ -18,6 +18,6 @@ jobs:
           pin-name: "ipfs_upload"
           pinata-api-key: ${{ secrets.PINATA_API_KEY }}
           pinata-secret-api-key: ${{ secrets.PINATA_SECRET_API_KEY }}
-          path: Pinata/Site  
+          path: /Site  
           verbose: true  
 
