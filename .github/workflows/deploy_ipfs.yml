@@ -19,5 +19,3 @@ jobs:
           path: ./public  # Path to your static site (e.g., build folder)
           verbose: true  # Optional: Show detailed logs
 
-      - name: Output CID
-        run: echo "Deployed CID: ${{ steps.deploy.outputs.cid }}"
